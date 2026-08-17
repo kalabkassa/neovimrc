@@ -11,6 +11,7 @@ return {
             "python",
             "cpp",
             "c",
+            "bash",
         })
 
         vim.api.nvim_create_autocmd("FileType", {

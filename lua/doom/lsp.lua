@@ -34,6 +34,16 @@ vim.lsp.config("clangd", {
     },
 })
 
+vim.lsp.config("bashls", {
+    cmd = { "bash-language-server", "start" },
+
+    filetypes = {
+        "sh",
+        "bash",
+    },
+})
+
+vim.lsp.enable("bashls")
 vim.lsp.enable("vtsls")
 vim.lsp.enable("clangd")
 vim.lsp.enable("pyright")
